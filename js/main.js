@@ -57,7 +57,7 @@ function askForNumberAndCheck(){
 
     document.getElementById("correct-number").innerHTML = "I numeri che hai indovinato: " + correctNumberArray;
     document.getElementById("total-correct-number").innerHTML = "Quanti numeri hai indovinato: " + correctNumberArray.length;
-
+    document.getElementById("user-number").innerHTML = "I numeri che hai inserito sono: " + numberArray;
 
     console.log(numberArray);
     console.log(randomNumberArray);
