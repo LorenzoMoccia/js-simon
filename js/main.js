@@ -4,7 +4,8 @@
 generateRandomNumber();
 //Nascondo i numeri
 hideNumber();
-
+//Chiedo all'utente i numeri da indovinare dopo 40 secondi
+setTimeout(askForNumber, 4000);
 
 
 
@@ -38,4 +39,16 @@ function hideNumber(){
         document.getElementById("random-number").innerHTML = "";
 
     }, 3000)
+}
+
+function askForNumber(){
+
+    let numberArray = [];
+
+    for(let i = 0; i < 5; i++){
+
+        numberArray[i] = Number(prompt("Inserisci un numero:"));
+    }
+
+    console.log(numberArray);
 }
